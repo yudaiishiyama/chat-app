@@ -6,24 +6,50 @@
   width: 300px;
   height: 100vh;
 }
-.chat {
-  background-color: #FFFFFF;
-  width: calc(100vw - 300px);
-}
 
-.side-header {
+.side-bar-header {
   height: 100px;
   padding: 0 20px;
+  background-color: #253141;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.side-main {
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create-room a {
+  font-size: 10px;
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+
+.rooms {
   background-color: #2F3E51;
-  height:calc(100vh-100px)
+  height: calc(100vh - 100px);
   padding: 0 20px;
   overflow: scroll;
+}
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: white;
+}
+
+.chat {
+  background-color: #FFFFFF;
+  width: calc(100vw - 300px);
 }
 
 .chat-header {
@@ -33,49 +59,9 @@
   justify-content: space-between;
 }
 
-.messages {
-  background-color: #FAFAFA;
-  height:calc(100vh-190px)
-  padding: 46px 40px 0;
-}
-
-.form {
-  background-color: #DDDDDD;
-  height: 90px;
-  padding: 20px 40px;
-}
-
-.header-name a{
-  color: #FAFAFA;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.create-room a{
-  color: deepskyblue;
-  font-size: 10px;
-  border: 1px lightblue solid;
-  padding: 14px;
-  text-decoration: none;
-}
-
-.side-content {
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
-.side-contents a {
-  text-decoration: none;
-  color: white;
-}
-
-.left-header {
-  padding-top: 36px;
-}
-
 .header-title {
-  font-size: 24px;
   color: #333;
+  font-size: 24px;
   margin-top: 36px;
 }
 
@@ -90,6 +76,42 @@
   padding: 20px;
 }
 
+.messages {
+  background-color: #FAFAFA;
+  height: calc(100vh - 100px - 90px);
+  padding: 46px 40px 0;
+  overflow: scroll;
+}
+
+.message {
+  margin: 10px 0 0 0;
+}
+
+.upper-message{
+  display: flex;
+}
+
+.message-user {
+  color: #434a54;
+  font-size: 16px;
+}
+
+.message-date {
+  color: #999;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.lower-message {
+  margin-top: 10px;
+}
+
+.message-content {
+  color: #434a54;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
 .form {
   background-color: #DDDDDD;
   height: 90px;
@@ -99,8 +121,8 @@
 
 .form-input {
   background-color: white;
-  display: flex;
   width: 100%;
+  display: flex;
 }
 
 .form-message {
